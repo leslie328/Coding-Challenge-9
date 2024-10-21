@@ -19,7 +19,7 @@ class Book:{
 
         this.title = "1998";
         this.author= "George Orwell";
-        this.ISBN = "381984681"
+        this.ISBN = "C"
         this.isAvailable = false; // Set default value
     }
     // Book details
@@ -39,3 +39,23 @@ class Book:{
 
     }
 }
+
+// Task 2: Create a section class
+    Section fiction = new Section("Fiction");
+
+    Book1 = new Book("The Selfish Gene", "Richard Dawkins", "20480802");
+    Book2  = new Book("Brave New World", "Aldous Huxley", "379279238");
+    Book3  = new Book("1998", "George Orwell", "381984681");
+
+    fiction.addBook(book1); "The Selfish Gene"
+    science.addBook(book2); "Brave New World"
+    nonfiction.addBook(book3); "1998"
+    ("Available books: " + fiction.getAvailableBooks());
+        fiction.listBooks();
+    ("Available books: " + science.getAvailableBooks());
+        science.listBooks();
+    ("Available books: " + nonfiction.getAvailableBooks());
+        nonfiction.listBooks();
+
+
+    
