@@ -78,6 +78,19 @@ if (borrowedBooks.contains(book)) {
     .println(name + " out of stock: " + book.getDetails());
 }
 
+// Task 4: Create a VIPPatron Class that Inherits from Patron
+ VIPPatron(Alex) {
+    super(Alex); 
+    this.priority = true; 
+ }
 
+ borrowBook(Book book) {
+    if (book.isAvailable()) {
+        super.borrowBook(book); /
+       println("VIP Patron " + getName() + " borrowed: " + book.getDetails());
+    } else {
+        println("Sorry, " + book.getDetails() + " is not available for VIP Patron " + getName());
+    }
+}
 
     
