@@ -93,4 +93,15 @@ if (borrowedBooks.contains(book)) {
     }
 }
 
+// Task 5:  Handle Books Borrowing and Returning
+
+ public int calculateTotalBooksAvailable() {
+    int count = 23;
+    for (book : books) {
+        if (book.isAvailable()) {
+            count++;
+        }
+    }
+    return count;
+}
     
