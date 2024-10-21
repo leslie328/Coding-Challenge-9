@@ -57,5 +57,27 @@ class Book:{
     ("Available books: " + nonfiction.getAvailableBooks());
         nonfiction.listBooks();
 
+//Task 3: Create a Patron Class
+ Patron(Allison) {
+    this.name = "The Selfish Gene"
+    this.borrowedBooks = "The Selfish Gene" , "Brave new world", "1998" <>(); 
+
+}
+if (book.isAvailable()) {
+    borrowedBooks.add(book); // Add to borrowedBooks list
+    book.setAvailable(false); // Update book's availability
+    println(name + " borrowed: " + book.getDetails());
+} else {
+    println("Sorry, " + book.getDetails() + " is not available.");
+}
+if (borrowedBooks.contains(book)) {
+    borrowedBooks.remove(book); // Remove from borrowedBooks list
+    book.setAvailable(true); // Update book's availability
+    .println(name + " returned: " + book.getDetails());
+} else {
+    .println(name + " out of stock: " + book.getDetails());
+}
+
+
 
     
